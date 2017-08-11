@@ -1,0 +1,44 @@
+a.btnDefault {
+    position: relative;
+    display: inline-block;
+    background: $btnColor;
+    padding: 16px 20px 16px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    font-family: $fB;
+    text-align: center;
+    font-weight: normal;
+    @include transition(all 0.2s ease);
+    span {font-size: 14px; font-family:$fB; letter-spacing:2px; }
+    &:hover {
+        background: $lBlue;
+    }
+    @at-root {
+        &-text, a.btnAdresListeGuncelle, a.btnAdresListeSil, a.btnSatisSozlesmeOnizle, a.btnOnBilgilendirmeFormOnizle, a.btnHediyeCekiKullan, a.btnSepeteAtFavori, a.btnStokHaberciFavori, a.btnFavoriListeSil, a.btnTakipListeFiySil, a.btnTakipListeStokSil, a.btnAdresIptal, a.btnIadeDetay {
+            background: none;
+            padding: 0;
+            font-size: inherit;
+            color: inherit;
+            &:hover {
+                background: inherit;
+            }
+        }
+        &-full, .pageLogin_btnFacebookLogin > table, a.btnFacebookLogin, a.btnYeniUyeKaydet, a.btnLogin, a.btnUyeBilgi, a.btnSifreGuncelle, a.btnIade, a.btnAdresKaydet {
+            width: 100%;
+        }
+        .urunDetay_btnSepeteAt > table, .urunListe_favoriEkle > table, .urunDetay_btnStokHaberci > table, .ems-cart-coupon > table, .pageLogin_btnFacebookLoginKutu > table, .pageLogin_btnFacebookLogin > table, .pageLogin_btnUyeSifreGonder > table {
+            display: table !important;
+            width: 100%;
+        }
+        a.btnFacebookLogin, a.btnFacebookLoginKutu {
+            background: $dBlue;
+            span {
+                color: #fff; 
+            }
+            &:hover {
+                background: $lBlue;
+            }
+        }
+    }
+}

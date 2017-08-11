@@ -1,0 +1,369 @@
+.kutuOzellikFiltre { 
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    * table {width:100%;}
+    .urunKiyaslamaOzellik_ozellik {
+        width:100%;
+        position: relative;
+        .urunKiyaslamaOzellik_ozellikAd {
+            width: 100%;
+            font-size:14px;
+            font-family: $fB;
+            padding: 17px 0 17px 0;
+            text-align: left;
+            display: inline-block;
+            position:relative;
+            cursor:pointer;
+            text-transform: uppercase;
+            @include transition(all .2s ease);
+            &:hover{ color:$title; }
+        }
+        .urunKiyaslamaOzellik_ozellikIcerik { padding-bottom: 20px; }
+        a.urunKiyaslamaOzellik {
+            font-size:14px;
+            color: $sText;
+            line-height: 35px;
+            &:before {
+                content:'';
+                width: 20px;
+                height: 20px;
+                border: 1px solid $borderColor;
+                display: inline-block;
+                margin: 6px 10px 0 0;
+                float: left;
+            }
+            &.link_selected {
+                &:before {
+                    border-color: $title;
+                    background: $title;
+                }
+            }
+            span{color: $sText;  @include transition(all .2s ease); }
+            &:hover {
+                color:$title;
+                span{ color:$title; }
+            }
+        }
+        span.filterQty { display: none; }
+    }
+    .urunKiyaslamaOzellik_ozellik.filtreNum {
+        span { display:none; }
+        table tbody tr td { float: left; width: 49px; }
+        a {
+            width:40px;
+            height:30px;
+            display:block;
+            border: 1px solid $borderColor;
+            text-align: center;
+            color: $sText;
+            position: relative; 
+            margin-bottom:10px;
+            line-height: 28px;
+            span {display:none;}
+            &.link_selected{
+                background:$title;
+                color: #fff;
+            }
+        }
+        a.urunKiyaslamaOzellik {
+            &:before {
+                display:none;
+            }
+        }
+    }
+    .urunKiyaslamaOzellik_ozellik.filtreRenk {
+        span { display:none; }
+        table tbody tr td { float: left; width: 49px; }
+        a.urunKiyaslamaOzellik {
+            display: inline-block;
+            color: $sText;
+            font-size: 0;
+            position: relative;
+            line-height:1;
+            span { display:none; }
+            img{ @include transition(transform .2s ease); @include setTransform(scale(1) ); }
+            &:hover{
+                img{ @include setTransform(scale(1.09) ); }
+            }
+            &:before{ display:none; }
+            &.link_selected{
+                &:before {
+                    font-family: 'icomoon';
+                    content:'\e90a';
+                    background:no-repeat;
+                    border:none;
+                    position:absolute;
+                    top:50%;
+                    left:0;
+                    right:0;
+                    z-index:1;
+                    float:none !important;
+                    margin:-6px auto 0 auto !important;
+                    display:inline-block;
+                    font-size:12px;
+                    width:12px;
+                    height:12px;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .urunKiyaslamaOzellik_ozellik.mrk {
+        a.urunKiyaslamaOzellik {
+            img {display:none;}
+        }
+    }
+    .kutuHeaderOzellikFiltre, .ayiracOzellik, .urunKiyaslamaOzellik_temizle {
+        display: none;
+    }
+    .kutuFooterOzellikFiltre {
+        .urunKiyaslamaOzellik_tumunuTemizle {
+            display:inline-block !important;
+            width: 100%;
+        a {
+            font-size:18px;
+            font-family: $fB;
+            padding:10px 5px;
+            width: 100%;
+            display:block;
+            text-align:center;
+            background:$btnColor;
+            span{ font-size:12px; color: #fff; }
+                &:hover{
+                    background:$lBlue;
+                }
+            }
+        }
+        .kutuFiltreUygula{ display:none; }
+    }
+    .kutuBodyOzellikFiltre {
+        > table > tbody > tr  > td {
+            border-top:1px solid $borderColor; 
+            display:block;
+            td {
+                width: 100%;
+                display: block;
+            }
+            &:empty{ display: none; }
+        }
+    }
+}
+
+.prdSortMenu {
+    width:100%;
+    margin-bottom: 30px;
+    span {
+        width:100%;
+        display:inline-block;
+    }
+    input[type="checkbox"] {
+        display:none;
+    }
+    label {
+        font-size: 16px;
+        cursor: pointer; 
+        &:before {  
+            content:'';
+            width: 8px;
+            height: 8px; 
+            background-color: #bcc7d5;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+        input[type="checkbox"]:checked + label:before {
+            background-color: #0262b7; 
+        }
+    &:before {
+        content:'';
+        border-top: 1px solid #d8d8d8;
+        width: 100%;
+        font-size: 17px;
+        color: #002b5c;
+        font-family: $fD;
+        padding: 19px 0 0px 0;
+        text-align: left;
+        display: inline-block; 
+        position: relative;
+    } 
+} 
+
+@media screen and ( max-width:$breakpointSM ) {
+    
+    .kutuOzellikFiltre {
+        position: fixed;
+        bottom:-100%;
+        width: 100%;
+        height: 100%;
+        background:#fff;
+        z-index: 30;
+        margin: 0;
+        @include transition(bottom .2s ease);
+        will-change: bottom;
+        .kutuBodyOzellikFiltre{
+            width: 100%;
+            height: calc(100% - 130px);
+            position: absolute;
+            top: 70px;
+            left: 0;
+            overflow: auto;
+            padding: 0 25px;
+            > table > tbody > tr > td{
+                border-bottom: 1px solid $borderColor;
+                border-top: none;
+            }
+        }
+        .urunKiyaslamaOzellik_ozellik{
+             .urunKiyaslamaOzellik_ozellikAd{
+                 font-size:18px;
+                 padding-left: 5px;
+                 padding-right: 5px;
+                 &:after{
+                    content:'';
+                        background:url(#{$baseHref + "/images/frontend/filter-icon.png"}) no-repeat;
+                        background-position: 0 -12px;
+                        width:12px;
+                        height:12px;
+                        position:absolute;
+                        top:50%;
+                        right:5px;
+                        margin-top:-6px;
+                 }
+                 &.kapali{
+                    &:after{
+                        background-position: 0 0;
+                    }
+                 }
+            }
+            a.urunKiyaslamaOzellik{
+                font-family:$fB;
+                font-size: 18px;
+                color: $colorDefault;
+                span{ color: $colorDefault; }
+                &:hover{
+                    color: $sText;
+                    span{ color: $sText; }    
+                }
+            }
+        }
+        .kutuHeaderOzellikFiltre{
+            display: block;
+            .mobile-filter-control {
+                position: relative;
+                padding:23px 20px;
+                border-bottom: 1px solid $borderColor;
+                .mbHeaderLogo{
+                    a{
+                        display: inline-block;
+                        img{ max-width:200px; }
+                    }
+                }
+                .mobile-menu-close {
+                    position: absolute;
+                    top:50%;
+                    right:30px;
+                    width:30px;
+                    height:30px; 
+                    margin-top:-15px;
+                    .mobile-filter-btn{
+                        display: block;
+                        .icon-ico_close{
+                            font-size: 25px;
+                            &:before{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .urunKiyaslamaOzellik_ozellik.filtreNum {
+            table{
+                display: table;
+                tbody {
+                    tr {
+                        td {
+                            float: inherit;
+                            width:33.333%;
+                            display:table-cell;
+                            vertical-align:middle;
+                        }
+                    }
+                }
+            }
+            a {
+                width:auto; height:40px; line-height:40px; margin:5px; color:$sText;
+            }
+        }
+        .urunKiyaslamaOzellik_ozellik.filtreRenk {
+            table{
+                display: table;
+                tbody {
+                    tr {
+                        td {
+                            float: inherit;
+                            width:33.333%;
+                            display:table-cell;
+                            vertical-align:middle;
+                        }
+                    }
+                }
+            }
+            a.urunKiyaslamaOzellik {
+                width:auto;
+                margin:5px;
+                img{ width: 40px; }
+            }
+        }
+        .kutuFooterOzellikFiltre{
+            position:absolute;
+            width:100%;
+            height:60px;
+            bottom:0;
+            left:0;
+            .urunKiyaslamaOzellik_tumunuTemizle{
+                width:50%;
+                display: inline-block;
+                a {
+                    width: 100%;
+                    height:60px;
+                    background:$btnColor;
+                    line-height:45px;
+                    span{ color:#fff; font-size:18px; font-family:$fB; }
+                }
+            }
+            .kutuFiltreUygula{
+                width:50%;
+                a.btnFiltreuygula{
+                    width:100%;
+                    height:60px;
+                    padding:9px 5px;
+                    background:#fff;
+                    line-height:45px;
+                    display:inline-block;
+                    border:1px solid #cbcbcb;
+                    span{color:#000; font-size:18px; font-family:$fB;}
+                    &:hover{
+                        border-color:$lBlue;
+                        background:$lBlue;
+                        span{ color:#fff; }
+                    }
+                }
+            }
+        }
+    }
+    .filter-selected{
+        .kutuOzellikFiltre{
+            .kutuFooterOzellikFiltre .kutuFiltreUygula{ display: inline-block; }
+        }
+    }
+    body.filter-popup-ready{
+        overflow:hidden;
+    }
+    body.filter-popup-animate{
+        .kutuOzellikFiltre {
+            bottom: 0;
+        }
+    }
+}

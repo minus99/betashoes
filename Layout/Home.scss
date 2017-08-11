@@ -1,0 +1,244 @@
+/*Cookie Kampanya Banner*/
+.ems-cookie-bnr {
+    width: 100%;
+    background:$lBlue;
+    height: 130px;
+    margin: 40px 0 20px 0;
+    &-inner{
+        margin: 0 auto;
+        max-width: 1240px;
+        width: 100%;
+        height: 100%;
+        padding:0 20px;
+        display: table;
+    }
+    &-content{
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        h1{
+            margin:0;
+            font-size:48px;
+            color:#ffffff;
+            font-family:$fB;
+            font-weight:normal;
+            width:100%;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        p{
+            margin:30px 0 0 0;
+            font-size:18px;
+            color:#ffffff;
+            display: none;
+        }
+        .btn-discover{
+            text-align: right;
+            width: 40%;
+            display: inline-block;
+            vertical-align: middle;
+            display: none;
+            .cookie-bnr-btn{
+                background: #fff;
+                padding:15px 30px;
+                display: inline-block;
+                span{ color:#000; letter-spacing:2.5px; font-size:16px; font-family:$fB; @include transition(all .2s ease); }
+            }
+        }
+    }   
+}
+
+.scroll-bottom-btn{
+    width: 100%;
+    text-align: center;
+    a{
+        display:inline-block;
+        padding:10px 5px;
+        background:#00adee;
+        border-radius:4px;
+        text-align:center;
+        width:45px;
+        height:35px;
+        line-height:15px;
+        margin-top: 20px;
+        i{
+            font-size: 13px;
+            width: 13px;
+            display: inline-block;
+            line-height:17px;
+            &:before{    
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.ems-double-cat-bnr{
+    max-width:1240px;
+    width:100%;
+    margin:$marginAuto;
+    &-items{
+        padding: 20px;
+        width: 50%;
+        float: left;
+        > a{
+            display: block;
+            position: relative;
+            &:hover{
+                .ems-double-cat-bnr-cover:before{
+                    opacity: 1;
+                }
+                .ems-double-cat-bnr-cover{
+                    img{
+                        @include transition(transform 7s linear);
+                        @include setTransform(scale(1.1));
+                    }
+                }
+            }   
+        }
+    }
+    &-cover{
+        overflow: hidden;
+        position: relative;
+        img { @include transition(transform 1.5s ease-out); @include setTransform(scale(1.01)); }
+        &:before{
+            @include setAbsolute();
+            z-index: 1;
+            content: '';
+            background:rgba(0, 0, 0, .3);
+            opacity: 0;
+            @include transition(opacity 1s ease);
+        }
+    }
+    &-content{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50%;
+        z-index: 3;
+        @include setTransform(translateY(-50%));
+        margin:$marginAuto;
+        width: 100%;
+        height: auto;
+        color: #fff;
+        text-align: center;
+        h1{
+            margin: 0;
+            font-family:$fB;
+            font-size:48px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            padding:5px 10px;
+            line-height: 1;
+        }
+    }
+    &.triple{
+        .ems-double-cat-bnr-items{
+            width: 33.333%;
+        }
+    }
+}
+
+/*Ana Sayfa One Cikan Urunler*/
+.featured-products {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    .ems-prd-list-count {
+        display: none;
+    }
+    .featured-products-title{
+        font-size: 24px;
+        margin: 15px 0 15px 0;
+        font-weight: normal;
+        font-family: $fB;
+    }
+    .ems-prd {
+        width: 20%; 
+        .listBottomBtn {
+            .ems-prd-addBasket{
+                .urunListe_adet { display: none; }
+            }
+        }
+    }
+    .ems-prd-list {
+        .ems-prd-list-prop,
+        .ems-prd-list-paging { display: none; }
+    }
+}
+
+/*Mobile Gecis*/
+@media screen and (max-width: 1100px) {
+    .featured-products {
+        .ems-prd-list {
+            .ems-prd {
+            width: 25%;  
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$breakpointSM) {
+    .scroll-bottom-btn{ display:none; }
+    /*Cookie banner*/
+    .ems-cookie-bnr{
+        height: 300px;
+        position:relative;
+        margin:20px 0 10px 0;
+        &-inner{
+            transform: none;
+            top: inherit;
+            max-width: 100%;
+            position: static;
+        }
+        &-content{
+            max-width:230px;
+            h1{ font-size:48px; }
+            h1, .btn-discover{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .cookie-bnr-btn{
+                max-width: 230px;
+                padding-top:20px;
+                padding-bottom:20px;
+                width:100%;
+                margin-top:25px;
+            }
+        }
+    }
+    .ems-double-cat-bnr {
+        max-width: 100%;
+        &-items{ float:none !important; padding:10px 20px; width: 100%; }
+        &-cover{
+            img{ width:100%; }
+        }
+        &.triple{
+            .ems-double-cat-bnr-items{ width:100%; }
+        }
+    }
+
+    /*Ana Sayfa One Cikan Urunler*/
+    .featured-products {
+        padding: 0;
+        .featured-products-title{
+            font-size: 20px;
+            color: #263238;
+            margin: 25px 0 10px 20px;
+        }
+    }
+    // 960px Öne çıkan ürün 
+    .featured-products {
+        .ems-prd-list {
+            .ems-prd {
+                width: 33.333%;  
+            }
+        }
+    }
+}

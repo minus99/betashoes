@@ -1,0 +1,153 @@
+@include fontFace('icomoon', '/styles/fonts/icon/icomoon', normal, normal);
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-ico_accessory-card:before {
+  content: "\e900";
+}
+.icon-ico_arrw-long-left:before {
+  content: "\e901";
+}
+.icon-ico_arrw-long-right:before {
+  content: "\e902";
+}
+.icon-ico_arw-empty-left:before {
+  content: "\e903";
+}
+.icon-ico_arw-empty-right:before {
+  content: "\e904";
+}
+.icon-ico_arw-full-bttm:before {
+  content: "\e905";
+}
+.icon-ico_arw-full-top:before {
+  content: "\e906";
+}
+.icon-ico_cart-delete:before {
+  content: "\e907";
+}
+.icon-ico_cart-delivery:before {
+  content: "\e908";
+}
+.icon-ico_cart-update:before {
+  content: "\e909";
+}
+.icon-ico_check:before {
+  content: "\e90a";
+}
+.icon-ico_close:before {
+  content: "\e90b";
+}
+.icon-ico_facebook:before {
+  content: "\e90c";
+}
+.icon-ico_ftPhone:before {
+  content: "\e90d";
+}
+.icon-ico_gladiator:before {
+  content: "\e90e";
+}
+.icon-ico_hamburger-menu:before {
+  content: "\e90f";
+}
+.icon-ico_heart-full:before {
+  content: "\e910";
+}
+.icon-ico_hearth:before {
+  content: "\e911";
+}
+.icon-ico_heeled-shoes:before {
+  content: "\e912";
+}
+.icon-ico_high-heels:before {
+  content: "\e913";
+}
+.icon-ico_instagram:before {
+  content: "\e914";
+}
+.icon-ico_instagram-full:before {
+  content: "\e915";
+}
+.icon-ico_key-chain:before {
+  content: "\e916";
+}
+.icon-ico_left-arrow-fill:before {
+  content: "\e917";
+}
+.icon-ico_men-bag:before {
+  content: "\e918";
+}
+.icon-ico_men-belt:before {
+  content: "\e919";
+}
+.icon-ico_men-boat:before {
+  content: "\e91a";
+}
+.icon-ico_men-shoes:before {
+  content: "\e91b";
+}
+.icon-ico_men-wallet:before {
+  content: "\e91c";
+}
+.icon-ico_mini-cart:before {
+  content: "\e91d";
+}
+.icon-ico_right-arrow-fill:before {
+  content: "\e91e";
+}
+.icon-ico_search:before {
+  content: "\e91f";
+}
+.icon-ico_shoes:before {
+  content: "\e920";
+}
+.icon-ico_slippers:before {
+  content: "\e921";
+}
+.icon-ico_twitter:before {
+  content: "\e922";
+}
+.icon-ico_userMobil:before {
+  content: "\e923";
+}
+.icon-ico_whatsapp:before {
+  content: "\e924";
+}
+.icon-ico_women-bag:before {
+  content: "\e925";
+}
+.icon-ico_women-boot:before {
+  content: "\e926";
+}
+.icon-ico_women-sheap:before {
+  content: "\e927";
+}
+.icon-ico_women-wallet:before {
+  content: "\e928";
+}
+
+.ems-icon {
+	position: relative;
+  display:inline-block; 
+  vertical-align:middle; 
+  text-indent:-999em; 
+  transition: all 0.2s ease;
+	font-size: 0px;
+ 	@at-root {
+      .ems-icon { background:url(#{$baseHref + "/images/frontend/sprite.png"}) no-repeat; }
+      .ems-icon-cargo-car { background-position: 0 0; width:28px; height:17px; }
+      .ems-icon-cargo-safe { background-position: -28px 0; width:22px; height:31px; }
+      .ems-icon-cargo-check { background-position: -50px 0; width:28px; height:29px; }
+      .ems-icon-key-sale { background-position: -78px 0; width:44px; height:26px; }
+  }
+}

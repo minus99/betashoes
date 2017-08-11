@@ -1,0 +1,101 @@
+.custom-popup-wrapper {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.custom-popup-inner a.close-button {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    right: 25px;
+    top: 25px;
+    display: block !important;
+    background: none;
+    &:before {  
+        content:'\e937'; 
+        font-family:'icomoon'; 
+        font-size:15px; 
+        color:$title; 
+        display:inline-block; 
+    }
+}
+
+a.btnMinPpCl {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: 3;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #f00;
+}
+
+.minPp, .custom-popup-inner {
+    height: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+    background: #fff;
+    position: relative;
+}
+
+.popupDefault {
+    padding: 30px;
+
+.popupTitleDefault  { 
+        display:block;
+        span {
+            font-size:17px;
+            font-family: $fB;
+        }
+    }
+}
+
+.custom-frm-popup{
+    padding: 35px !important;
+    a.btnMinPpCl{ top: 5px !important; right: 5px !important; }
+}
+
+.ems-logoff .popup_stokHaberci, .ems-logoff .popup_favori {
+    max-width: 480px !important;
+    .minPpBdy {
+        height:420px !important;
+    }
+}
+
+.popup-information{
+    a.btnMinPpCl{
+        top:15px !important;
+        right:15px !important;
+    }
+    .minPpBdy{
+        padding:20px;
+        p{
+            margin:5px 0;
+            > a{
+                display: block;
+            }
+        }    
+    }
+}
+
+@media screen and (max-width:960px) {
+    
+    body.system-popup-ready {overflow: hidden; position: fixed;}
+    .minPp, .custom-popup-inner {
+        max-width: 100% !important;
+    } 
+    .minPpBdy, .custom-popup-body {
+        height: 100% !important;
+    }
+    .minPpWrp, .custom-popup-wrapper {
+        position: fixed !important;
+        top: 0 !important;
+        height: 100% !important; 
+    }
+}
