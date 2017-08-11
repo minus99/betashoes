@@ -12324,6 +12324,9 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+.prd-detail-comb .swiper-slide {
+  width: 30%; }
+
 /*Mobile Geçiş*/
 @media screen and (max-width: 960px) {
   .widget-slider-content {
@@ -13310,5 +13313,3 @@ button.swiper-pagination-bullet {
   .page-cart.step1 .ems-grid-cart > div .ems-grid-name {
     width: 80%;
     padding-right: 20px; } }
-
-/*# sourceMappingURL=style.css.map */
