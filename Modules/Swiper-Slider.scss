@@ -35,7 +35,7 @@
     }
 }
 .swiper-title {
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
     h2{
         margin: 0;
         font-size: 24px;
@@ -374,20 +374,16 @@ button.swiper-pagination-bullet {
     }
 }
 
-.prd-detail-comb .swiper-slide{
-  width: 30%;
-}
-
 
 /*Mobile Geçiş*/
 @media screen and (max-width:$breakpointSM) {
     .widget-slider-content {
         max-width: 100%;
-        padding: 0;
+        padding: 0; 
     }
     .swiper-button-prev, .swiper-button-next { display: none; }
     .swiper-slide {
-        .ems-prd-image a, .ems-prd-image img {
+        .ems-prd-image a, .ems-prd-image img { 
             margin: 0 auto;
         }
     }

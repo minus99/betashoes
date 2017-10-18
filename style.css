@@ -43,6 +43,7 @@ a:active, a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; }
 
 b, strong {
@@ -3324,7 +3325,7 @@ span.cStyler {
       .main-slider .swiper-inner .swiper-slide-wrapper .cover-mobile {
         display: none;
         height: 400px;
-        background-position: 100% 100% !important; }
+        background-position: 50% 50% !important; }
   .main-slider > .swiper-pagination-bullets {
     display: block !important; }
   .main-slider.swiper-container-horizontal > .swiper-pagination-bullets {
@@ -12324,9 +12325,6 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-.prd-detail-comb .swiper-slide {
-  width: 30%; }
-
 /*Mobile Geçiş*/
 @media screen and (max-width: 960px) {
   .widget-slider-content {
@@ -12882,11 +12880,8 @@ button.swiper-pagination-bullet {
   .ems-grid-favorites .ems-grid-row .ems-grid-piece > a:last-child {
     top: 20px; }
 
-/*yeni eklenen 18.10.2017*/
-.ems-grid-cart .ems-grid-row .ems-grid-name .prdItem { font-family: "regular"; }
-
 .ems-grid-cart .ems-grid-row .ems-grid-name {
-  font-family: "bold";
+  font-family: "regular";
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
@@ -13316,3 +13311,5 @@ button.swiper-pagination-bullet {
   .page-cart.step1 .ems-grid-cart > div .ems-grid-name {
     width: 80%;
     padding-right: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
