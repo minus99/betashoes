@@ -12882,6 +12882,9 @@ button.swiper-pagination-bullet {
   .ems-grid-favorites .ems-grid-row .ems-grid-piece > a:last-child {
     top: 20px; }
 
+/*yeni eklenen 18.10.2017*/
+.ems-grid-cart .ems-grid-row .ems-grid-name .prdItem { font-family: "regular"; }
+
 .ems-grid-cart .ems-grid-row .ems-grid-name {
   font-family: "bold";
   font-size: 14px;
