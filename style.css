@@ -13056,6 +13056,8 @@ button.swiper-pagination-bullet {
 .ems-grid-order-products .ems-grid-row .ems-grid-price-total {
   text-align: center; }
 
+.prdItem { font-family: 'regular'; }
+
 @media screen and (max-width: 1100px) {
   .ems-grid-address .ems-grid-row {
     margin-bottom: 20px;
@@ -13311,5 +13313,4 @@ button.swiper-pagination-bullet {
   .page-cart.step1 .ems-grid-cart > div .ems-grid-name {
     width: 80%;
     padding-right: 20px; } }
-
 /*# sourceMappingURL=style.css.map */
