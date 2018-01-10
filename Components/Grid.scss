@@ -65,7 +65,7 @@
             span{ display: none; }
         }
         .ems-grid-name{
-            text-align: left; 
+            text-align: left;
         }
         &:first-child {
             display: table;
@@ -91,9 +91,9 @@
                 padding-right: 10px;
             }
             &.ems-grid-delete {
-                a { 
-                    display:inline-block; 
-                    padding:5px 10px; 
+                a {
+                    display:inline-block;
+                    padding:5px 10px;
                     span{
                         .icon-ico_close {
                             font-size:12px;
@@ -111,7 +111,7 @@
                 border-bottom-width: 1px;
             }
         }
-        
+
         .ems-grid-img {
             a, img {
                 display: inline-block;
@@ -125,10 +125,10 @@
                     position:absolute;
                     top:0;
                     left:0;
-                    background-image:-webkit-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0)); 
-                    background-image:-moz-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0)); 
-                    background-image:-ms-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0)); 
-                    background-image:-o-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0)); 
+                    background-image:-webkit-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0));
+                    background-image:-moz-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0));
+                    background-image:-ms-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0));
+                    background-image:-o-linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0));
                     background-image:linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,0));
                     pointer-events: none;
                 }
@@ -142,7 +142,7 @@
             height: 36px;
             position: absolute;
             left: 10px;
-            top: 100px; 
+            top: 100px;
             border-radius: 100%;
             display: none;
             > a {
@@ -151,7 +151,7 @@
                 height: 100%;
                 span {
                     display: block;
-                    height: 100%;           
+                    height: 100%;
                     i {
                         position: absolute;
                         left: 50%;
@@ -191,7 +191,7 @@
         .ems-grid-piece {
             .piece-wrapper {
             > input {
-                border:1px solid $borderColor; 
+                border:1px solid $borderColor;
                 width: 50px !important;
                 height: 40px;
                 line-height: 40px;
@@ -257,10 +257,10 @@
                     color: $lBlue;
                     text-decoration: underline;
                 }
-            }            
+            }
         }
         .satBrFiyat, .netFiyat, .topFiyat {display: none !important;}
-        .satBrFiyatVrg, .netFiyatVrg { 
+        .satBrFiyatVrg, .netFiyatVrg {
             display: block !important;
             text-align: center;
             @at-root {
@@ -314,12 +314,12 @@
 .ems-grid-favorites, .ems-grid-follow-price, .ems-grid-follow-stock {
 	.ems-grid-header {
 		> div {
-		
+
 			&.ems-grid-remove {
-                width:7%; 
+                width:7%;
             }
-            &.ems-grid-img { 
-                width:12%;  
+            &.ems-grid-img {
+                width:12%;
             }
             &.ems-grid-code {
                 width:12%;
@@ -336,7 +336,7 @@
             &.ems-grid-date {
                 width:15%;
             }
-		
+
 		}
 	}
 	 .ems-grid-row {
@@ -345,10 +345,10 @@
             vertical-align: middle;
             border-left: 1px solid $borderColor;
 			&.ems-grid-remove {
-                width:7%; 
+                width:7%;
             }
-            &.ems-grid-img { 
-                width:12%;  
+            &.ems-grid-img {
+                width:12%;
             }
             &.ems-grid-code {
                 width:12%;
@@ -444,9 +444,9 @@
             }
             [id$="lblProm"] ul {
                 display: table;
-                padding: 5px 0; 
-                font-family: $fB; 
-                font-size: 12px; 
+                padding: 5px 0;
+                font-family: $fB;
+                font-size: 12px;
                 color: $red;
                 &:empty {
                     display: none;
@@ -585,7 +585,7 @@
                         }
                     }
                     span { color:$dBlue; }
-                }            
+                }
             }
         }
     }
@@ -594,7 +594,7 @@
 .ems-grid-message {
     .ems-grid-row > div {
         a {
-            display: block !important; 
+            display: block !important;
         }
         a.emos_invisible {
            display: none !important;
@@ -653,12 +653,12 @@
 }
 
 @media screen and (max-width: 1100px) {
-    
+
     .ems-grid-address {
         .ems-grid-row {
             margin-bottom: 20px;
             border-top-width: 1px;
-            border-bottom-width: 1px; 
+            border-bottom-width: 1px;
             &:last-child{
                 > div {
                     border-bottom-width: 0;
@@ -728,7 +728,7 @@
 }
 
 @media screen and (max-width: $breakpointSM) {
-    
+
     .ems-grid-default.ems-grid-cart {
         > div {
             > div { display: inline-block; vertical-align: top; }
@@ -767,7 +767,7 @@
             .ems-grid-price {
                 text-align: right;
                 display: none;
-            } 
+            }
             .ems-grid-price-total {
                 position: static;
                 width: 40%;
@@ -801,7 +801,7 @@
             }
         }
     }
-    
+
     .page-member{
         .ems-grid-order, .ems-grid-favorites, .ems-grid-follow-price, .ems-grid-follow-stock, .ems-grid-message, .ems-grid-order-products {
             .ems-grid-header,
@@ -836,7 +836,7 @@
                 width: calc(100% - 180px);
                 > div{
                     padding: 10px !important;
-                    border-left-width:0; 
+                    border-left-width:0;
                     font-family:$fD;
                     font-size: 15px !important;
                     color:$sText !important;
@@ -850,7 +850,7 @@
                 &:last-child > div { border-bottom-width:0; }
             }
         }
-       
+
         .ems-grid-favorites, .ems-grid-follow-stock, .ems-grid-follow-price, .ems-grid-follow-stock{
             .ems-grid-header{
                 .ems-grid-remove{ display:none; }
@@ -871,7 +871,7 @@
                 .ems-grid-report, .ems-grid-price{ border-bottom:1px solid $borderColor; }
             }
         }
-        
+
         .ems-grid-favorites{
             .ems-grid-header{
                 .ems-grid-price{ border-bottom: 0; }
@@ -892,20 +892,20 @@
                 .ems-grid-price { border-bottom-width:1px;}
             }
         }
-        
+
         .ems-grid-order, .ems-grid-follow-price{
             .ems-grid-header, .ems-grid-row{
                 > div:last-child{ border-bottom:1px solid $borderColor !important; }
             }
         }
-        
+
         .ems-grid-follow-price{
             .ems-grid-row > div:last-child{ border-bottom-width:0 !important; }
             .ems-grid-row:last-child{
                 .ems-grid-price{ border-bottom-width:1px; }
             }
         }
-       
+
         .ems-page-member-follow-list{
             .page-top-desc{ display:none; }
             .inner-title{
@@ -927,7 +927,7 @@
                 }
             }
         }
-        
+
         .ems-grid-message {
             .ems-grid-row > div a{ line-height:1; }
             .ems-grid-header > div:last-child { border-bottom:1px solid $borderColor; }
