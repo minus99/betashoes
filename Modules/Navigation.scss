@@ -3,7 +3,7 @@
     padding: 10px 0 10px 0;
     border-width:0 0 1px 0;
     border-color: $borderColor;
-    border-style: solid; 
+    border-style: solid;
     a, h1, .ems-prd-dtlCode-code {
         display: inline-block;
         margin-left: 10px;
@@ -11,13 +11,12 @@
         font-size:14px;
         color: $colorDefault;
         font-weight: normal;
-        text-transform: capitalize;
         padding: 5px 0;
         &:before {
             display: inline-block;
             content: "\e904";
             margin-right: 10px;
-            font-family: 'icomoon'; 
+            font-family: 'icomoon';
             color: $sText;
             font-size: 10px;
             line-height: 10px;
@@ -82,7 +81,7 @@
             overflow: hidden;
         }
     }
-} 
+}
 
 @media screen and (max-width:960px) {
 
@@ -97,7 +96,7 @@
         display:block;
         padding: 0px 0 0px 20px;
         max-width: none;
-        text-align: center; 
+        text-align: center;
         background: $dBlue;
         position: absolute;
         top: 0;
@@ -106,9 +105,9 @@
         right: auto;
         text-align: left;
         display: table;
-        z-index: 22; 
+        z-index: 22;
         width:auto;
-        .navigasyon { 
+        .navigasyon {
             width: auto;
             height: auto;
             overflow: visible;
@@ -140,7 +139,7 @@
     }
 
 
-    .search-fixed-ready { 
+    .search-fixed-ready {
             .page-detail {
                 .navigasyon {
                     margin-top: -135px;
@@ -150,11 +149,11 @@
     .search-focused {
             .page-detail {
                 .navigasyon {
-                    display: none; 
+                    display: none;
                 }
             }
         }
-    
+
 
         .page-list {
             .navigasyon {
@@ -163,7 +162,7 @@
                 background:$marineBlue;
                 position: fixed;
                 /*top: 0;*/
-                left: 0px; 
+                left: 0px;
                 width: 100%;
                 display: none;
                     a {

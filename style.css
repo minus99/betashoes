@@ -8965,7 +8965,6 @@ body.header-fixed-animate .mod-mini-search-body .ems-field.text input {
     font-size: 14px;
     color: #000;
     font-weight: normal;
-    text-transform: capitalize;
     padding: 5px 0; }
     .navigasyon a:before, .navigasyon h1:before, .navigasyon .ems-prd-dtlCode-code:before {
       display: inline-block;
